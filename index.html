@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The Forge equips young adults and early-career professionals for the marketplace." />
+    <title>The Forge | Forged for the Kingdom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="nav page-width" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="The Forge home">
+          <svg class="brand-mark" viewBox="0 0 64 48" aria-hidden="true"><path d="M9 19h25l8-10h6l-2 10h9c2 0 4 2 4 4s-2 4-4 4H44l-3 7h8l4 9H11l4-9h9l-3-7H9c-3 0-5-2-5-4s2-4 5-4Z"/><path class="brand-ember" d="M16 36h31"/></svg>
+          <span>The Forge</span>
+        </a>
+        <div class="nav-links"><a href="#pathways">Our pathways</a><a class="nav-cta" href="#join">Get involved</a></div>
+      </nav>
+
+      <div class="hero-content page-width">
+        <p class="eyebrow on-dark"><span></span>Formation for life, work and leadership</p>
+        <h1>Forged for the <em>Kingdom.</em><br />Built for the marketplace.</h1>
+        <p class="hero-intro">The Forge equips young adults and early-career professionals to enter and lead in the marketplace with Christian character, conviction and capability.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#join">Find your next step <span>→</span></a><a class="button button-ghost" href="#pathways">Explore the pathways</a></div>
+      </div>
+
+      <div class="hero-bottom page-width">
+        <p>“As iron sharpens iron, so one person sharpens another.” <span>Proverbs 27:17</span></p>
+        <a href="#belief" aria-label="Scroll to what we believe">Scroll to begin <span>↓</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="belief-section" id="belief">
+        <div class="page-width belief-wrap">
+          <p class="eyebrow"><span></span>What we believe</p>
+          <div class="belief-copy">
+            <p>Living for Christ is not confined to Sundays or private moments.</p>
+            <p>Together, we sharpen one another to <strong>lead, work and serve</strong> in the marketplace with the character and grace of Christ.</p>
+            <p class="belief-close">Christ first. Always.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="pathways-section" id="pathways">
+        <div class="page-width">
+          <div class="section-heading"><p class="eyebrow on-dark"><span></span>Our pathways</p><h2>Built to <em>step forward.</em></h2><p>Whether you are finding your way, ready to walk alongside someone, or able to create opportunity, there is a place for you here.</p></div>
+          <div class="path-grid">
+            <article class="path-card"><p class="path-number">01 / Participate</p><h3>Step forward.</h3><ul><li>Coaching and mentoring</li><li>Faith for everyday work</li><li>Practical pathways into opportunity</li></ul><a href="#join">Take your next step <span>→</span></a></article>
+            <article class="path-card"><p class="path-number">02 / Mentor</p><h3>Sharpen another.</h3><ul><li>Share your experience</li><li>Build confidence and direction</li><li>Walk alongside someone</li></ul><a href="#join">Become a mentor <span>→</span></a></article>
+            <article class="path-card"><p class="path-number">03 / Partner</p><h3>Open a door.</h3><ul><li>Open routes into work</li><li>Support apprenticeships and placements</li><li>Create meaningful opportunity</li></ul><a href="#join">Partner with us <span>→</span></a></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="join-section" id="join">
+        <div class="join-glow"></div>
+        <div class="page-width join-content"><p class="eyebrow on-dark"><span></span>Take your place</p><h2>There is more <em>in you.</em></h2><p>Whether you are taking your first step, ready to mentor, or can open a door for someone else, The Forge is a place to begin.</p><button class="button button-primary" type="button" data-open-modal>Register your interest <span>→</span></button></div>
+      </section>
+    </main>
+
+    <footer class="footer"><div class="page-width"><a class="brand" href="#top"><svg class="brand-mark" viewBox="0 0 64 48" aria-hidden="true"><path d="M9 19h25l8-10h6l-2 10h9c2 0 4 2 4 4s-2 4-4 4H44l-3 7h8l4 9H11l4-9h9l-3-7H9c-3 0-5-2-5-4s2-4 5-4Z"/><path class="brand-ember" d="M16 36h31"/></svg><span>The Forge</span></a><p>Forming people for life, work and leadership</p></div></footer>
+
+    <dialog class="interest-modal" data-modal>
+      <button class="modal-close" type="button" data-close-modal aria-label="Close">×</button>
+      <p class="eyebrow"><span></span>Register your interest</p>
+      <h2>Your next step starts here.</h2>
+      <form data-interest-form><label>Name<input name="name" required autocomplete="name" /></label><label>Email<input type="email" name="email" required autocomplete="email" /></label><label>I want to…<select name="interest" required><option value="">Choose one</option><option>Step forward</option><option>Mentor</option><option>Partner</option></select></label><button class="button button-primary" type="submit">Register interest <span>→</span></button><p class="form-success" aria-live="polite"></p></form>
+    </dialog>
+    <script src="app.js"></script>
+  </body>
+</html>
